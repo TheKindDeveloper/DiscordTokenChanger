@@ -94,6 +94,8 @@ def _CHECKER_():
             return f'1:{email}:{new}:{new_token}'
         if r.status_code == 403:
             Style.print(f"(!): Couldn't Change {email} → {token} is locked")
+        if r.status_code == 401:
+            Style.print(f"(!): Invalid token → {token}")
         else:
             Style.print(f"(!): Failed to change for → ({email})")
             return f'0:{email}:{password}:{token}'
