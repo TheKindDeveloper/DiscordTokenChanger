@@ -5,6 +5,8 @@ from Dickscord import Style
 from pystyle import *
 import os
 
+"recoded https://github.com/fknMega/discord-token-changer, to make it unflagged and a few more options."
+
 def _CHECKER_():
     os.system('title Bypass Token Changer ')
     custompass = Style.input("(#): Custom password [y/n]?: ")
